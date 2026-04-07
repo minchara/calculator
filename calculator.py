@@ -1,10 +1,3 @@
-# ================================
-#       SIMPLE CALCULATOR
-#       Basic Python Project
-# ================================
-
-# --- Functions for each operation ---
-
 def add(a, b):
     return a + b
 
@@ -26,9 +19,6 @@ def modulus(a, b):
 
 def power(a, b):
     return a ** b
-
-
-# --- Main Program ---
 
 print("=" * 35)
 print("       SIMPLE CALCULATOR")
@@ -53,12 +43,9 @@ while True:
     if choice not in ("1", "2", "3", "4", "5", "6"):
         print("Invalid choice! Please enter a number between 1 and 7.")
         continue
-
-    # Get two numbers from user
+        
     num1 = float(input("Enter first number  : "))
     num2 = float(input("Enter second number : "))
-
-    # Perform the selected operation
     if choice == "1":
         result = add(num1, num2)
         symbol = "+"
@@ -77,8 +64,6 @@ while True:
     elif choice == "6":
         result = power(num1, num2)
         symbol = "**"
-
-    # Display result
     print("-" * 35)
     print(f"  {num1} {symbol} {num2} = {result}")
     print("-" * 35)
